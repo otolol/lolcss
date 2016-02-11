@@ -1,0 +1,17 @@
+$_margins: (
+        xs:   5px,
+        s:    10px,
+        m:    15px,
+        lg:   20px,
+        xlg:  30px
+);
+
+$_directions:(left, right, top, bottom);
+
+@each $direction in $_directions{
+  @each $key, $value in $_margins{
+    .u-margin-#{$direction}-#{$key}{
+      margin-#{$direction}: #{$value};
+    }
+  }
+}
