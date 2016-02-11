@@ -1,0 +1,37 @@
+//text aligns
+$_text_aligns: (center, left, right, justify);
+
+@each $item in $_text_aligns{
+  .u-text-#{$item}{
+    text-align: #{$item};
+  }
+}
+
+
+
+
+//font sizes
+$_fontSize:(
+        xs:   11px,
+        s:    12px,
+        m:    13px,
+        lg:   14px,
+        xlg:  15px
+);
+
+@each $key, $value in $_fontSize{
+  .u-font-size-#{$key}{
+    font-size: #{$value};
+  }
+}
+
+
+
+//text-transform
+.u-text-uppercase{
+  text-transform: uppercase !important;
+}
+
+.u-text-lowercase{
+  text-transform: lowercase !important;
+}
