@@ -1,0 +1,7 @@
+$_displays: (inline, block, inline-block, none, flex);
+
+@each $display in $_displays{
+  .u-display-#{$display}{
+    display: $display;
+  }
+}
