@@ -13,8 +13,8 @@ $_line_Heights:(
   xs:  1,
   s:   1.25,
   m:   1.5,
-  lg:  1.75,
-  xlg: 2
+  l:  1.75,
+  xl: 2
 );
 
 @each $key, $value in $_line_Heights{
@@ -29,8 +29,8 @@ $_fontSize:(
         xs:   11px,
         s:    12px,
         m:    13px,
-        lg:   14px,
-        xlg:  15px
+        l:   14px,
+        xl:  15px
 );
 
 @each $key, $value in $_fontSize{
