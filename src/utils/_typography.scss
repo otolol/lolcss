@@ -8,6 +8,20 @@ $_text_aligns: (center, left, right, justify);
 }
 
 
+//line heights
+$_line_Heights:(
+  xs:  1,
+  s:   1.25,
+  m:   1.5,
+  lg:  1.75,
+  xlg: 2
+);
+
+@each $key, $value in $_line_Heights{
+  .u-line-height-#{$key}{
+    line-height: #{$value};
+  }
+}
 
 
 //font sizes
