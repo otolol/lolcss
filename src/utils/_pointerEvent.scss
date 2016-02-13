@@ -1,7 +1,11 @@
-.u-cursor-pointer {
-  cursor: pointer;
+.u-pointer-events {
+  pointer-events: auto;
 }
 
-.u-cursor-default {
-  cursor: default;
+.u-pointer-events-none {
+  pointer-events: none;
+}
+
+.u-unSelectable {
+  user-select: none;
 }
