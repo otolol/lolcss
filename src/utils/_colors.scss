@@ -1,0 +1,23 @@
+$colors:(
+  white:    #fff,
+  black:    #000
+);
+
+@each $key, $value in $colors {
+  .u-color-#{$key} {
+    color: #{$value};
+
+  }
+}
+
+
+$bg-colors:(
+        white:    #fff,
+        black:    #000
+);
+
+@each $key, $value in $bg-colors {
+  .u-bg-color-#{$key} {
+    background-color: #{$value};
+  }
+}
