@@ -1,0 +1,7 @@
+$floats : (left, right);
+
+@each $float in $floats {
+  .u-float-#{$float} {
+    float: #{$float};
+  }
+}
