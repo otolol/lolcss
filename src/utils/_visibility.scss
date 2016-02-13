@@ -1,0 +1,7 @@
+$visibilities: (visible, hidden);
+
+@each $item in $visibilities {
+  .u-#{$item} {
+    visibility: #{$item};
+  }
+}
