@@ -1,4 +1,4 @@
-//@import "vendor/normalize";
+@import "vendor/normalize";
 
 @import "basic/reset";
 @import "basic/anchor";
@@ -13,3 +13,5 @@
 @import "utils/colors";
 @import "utils/float";
 @import "utils/pointerEvent";
+@import "utils/cursor";
+@import "utils/opacity";
