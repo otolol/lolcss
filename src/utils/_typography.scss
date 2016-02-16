@@ -49,3 +49,14 @@ $_fontSize:(
 .u-text-lowercase{
   text-transform: lowercase !important;
 }
+
+
+
+//decorations
+$_decorations : ('none', 'underline', 'overline', 'line-through', 'initial', 'inherit');
+
+@each $decor in $_decorations {
+  .u-text-decoration-#{$decor} {
+    text-decoration: #{$decor};
+  }
+}
