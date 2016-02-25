@@ -1,0 +1,14 @@
+@mixin button-core($width, $paddingVerticalUnit, $borderRadius, $borderUnit, $bgColor, $borderColor) {
+  display: inline-block;
+  width: $width;
+  padding-bottom: $paddingVerticalUnit;
+  padding-top: $paddingVerticalUnit;
+  background-color: $bgColor;
+  border-radius: $borderRadius;
+  background-color: $bgColor;
+  border-top: $borderUnit solid $borderColor;
+  &:hover {
+    background-color: $borderColor;
+  }
+}
+
