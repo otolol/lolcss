@@ -1,0 +1,26 @@
+@mixin bordered( $color, $thickness, $direction) {
+  border-#{$direction}: $thickness solid $color;
+}
+
+$_borders: (
+        top-black-s: (
+                color: #000,
+                thickness: 4px,
+                direction:top
+        ),
+        top-white-m: (
+                color: #fff,
+                thickness: 5px,
+                direction:top
+        )
+);
+
+@each $name, $border in $_borders {
+  .u-#{$name} {
+    @include bordered(
+      map-get($border, color),
+      map-get($border, thickness),
+      map-get($border, direction)
+    )
+  }
+}
