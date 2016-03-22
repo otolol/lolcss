@@ -3,7 +3,7 @@ language: sass
 node_js:
   - "5"
   - "0.12"
-  
+
 before_script:
   - gem install sass
   - npm install
